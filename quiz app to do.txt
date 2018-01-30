@@ -1,0 +1,9 @@
+1.  Question Number Working.
+2.  More Questions.
+3.  Remove the text from the HTML on the start screen (to object)
+4.  Move all text from inside javascript to a object.
+5.  Go through the javascript code and make it more function oriented. (refactor my code)
+6.  Comment on the methods.
+7.  Create read me what the quiz app is and what it does.
+8.  Populate all questions based on user filter.
+9.  For Each for the inputs
