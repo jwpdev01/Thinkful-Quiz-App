@@ -9,9 +9,9 @@ function initializeQuiz() {
 //remove opening screen and incrment question counter
 //display first question for user
 function startQuiz() {
-    $('.btn-start').on('click', function (event) {
+    $('.js-btn-start').on('click', function (event) {
         $('div.start-screen').remove();
-        $('.question-number').text(QUIZSTATE.getQuestionNumber());
+        $('.js-question-number').text(QUIZSTATE.getQuestionNumber());
         renderQuestions();
     });
 }
@@ -28,10 +28,10 @@ function renderQuestions() {
         setDialogText(answerStatus);
 
         QUIZSTATE.setQuestionNumber();
-        $('.question-number').text(QUIZSTATE.getQuestionNumber());
+        $('.js-question-number').text(QUIZSTATE.getQuestionNumber());
 
         QUIZSTATE.setCorrectCount(answerStatus);
-        $('.question-score').text(QUIZSTATE.getCorrectCount());
+        $('.js-question-score').text(QUIZSTATE.getCorrectCount());
 
         //load correct graphic for correct or incorrect answer
         $('#dialog').append(loadDialogGraphics(answerStatus)).append($(this).html());
@@ -106,8 +106,8 @@ function createResultPage() {
 }
 
 function startOver() {
-    $('.start-over').click(function (event) {
-        $('main-screen').html(QUIZSTATE.startOver);
+    $('.js-start-over').click(function (event) {
+        $('js-main-screen').html(QUIZSTATE.startOver);
     });
 }
 

@@ -20,7 +20,7 @@
    top: 0;
    left: 0;
    right: 0;
-   height: 800px;
+   height: 1200px; /*need help with height issue*/
    opacity: .3;
    -webkit-background-size: cover;
    -moz-background-size: cover;

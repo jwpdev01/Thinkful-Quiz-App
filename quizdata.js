@@ -89,19 +89,19 @@ const QUIZSTATE = {
         }
         return this.correctCount;
     },
-    startScreen: "<h2>READY TO REVIEW YOUR HTML, CSS, AND JAVASCRIPT FOR THE MOCK INTERVIEW?</h2><button class='btn-start'>START QUIZ</button>",
-    //resultsPage: [`<form><span><h2>Your final SCORE is: </h2><span class='final-score'>${(this.getCorrectCount() / this.getQuestionNumber()) * 100}%</span><div><button class='start-over'>Start Over</button></div></form>`],
+    startScreen: "<h2>READY TO REVIEW YOUR HTML, CSS, AND JAVASCRIPT FOR THE MOCK INTERVIEW?</h2><button class='js-btn-start'>START QUIZ</button>",
+    //resultsPage: [`<form><span><h2>Your final SCORE is: </h2><span class='final-score'>${(this.getCorrectCount() / this.getQuestionNumber()) * 100}%</span><div><button class='js-start-over'>Start Over</button></div></form>`],
     correctAnswerImage: "https://media.giphy.com/media/P5VmnAcgCBs5y/giphy.gif",
     /*incorrectAnswerImage: "http://saltlakebiblecollege.org/images/Wrong_Answer_2.jpg",*/
     incorrectAnswerImage: "http://exchangedownloads.smarttech.com/public/content/80/80354240-3061-4563-9995-87ebd333c1b6/previews/medium/0005.png",
     dialogCorrectAnswer: [`<div id="dialog" title="Basic dialog"><p>Correct Answer!</p></div>`],
     dialoginCorrectAnswer: [`<div id="dialog" title="Basic dialog"><p>Sorry, incorrect answer!</p></div>`],
-    startOver: [`<div class="row"><div class="col-12"><div class="start-screen"><h2>READY TO REVIEW YOUR HTML, CSS, AND JAVASCRIPT FOR THE MOCK INTERVIEW?</h2><button class='btn-start'>START QUIZ</button></div></div>`]
+    startOver: [`<div class="row"><div class="col-12"><div class="start-screen"><h2>READY TO REVIEW YOUR HTML, CSS, AND JAVASCRIPT FOR THE MOCK INTERVIEW?</h2><button class='js-btn-start'>START QUIZ</button></div></div>`]
 };
 
 /*const QUIZUI = {
-    startScreen: "<h2>READY TO REVIEW YOUR HTML, CSS, AND JAVASCRIPT FOR THE MOCK INTERVIEW?</h2><button class='btn-start'>START QUIZ</button>",
-    resultsPage: [`<form><span><h2>Your final SCORE is: </h2><span class='final-score'>${(QUIZSTATE.correctCount / currentQuestion) * 100}%</span><div><button class='start-over'>Start Over</button></div></form>`],
+    startScreen: "<h2>READY TO REVIEW YOUR HTML, CSS, AND JAVASCRIPT FOR THE MOCK INTERVIEW?</h2><button class='js-btn-start'>START QUIZ</button>",
+    resultsPage: [`<form><span><h2>Your final SCORE is: </h2><span class='final-score'>${(QUIZSTATE.correctCount / currentQuestion) * 100}%</span><div><button class='js-start-over'>Start Over</button></div></form>`],
     correctAnswerImage: "https://media.giphy.com/media/P5VmnAcgCBs5y/giphy.gif",
     incorrectAnswerImage: "http://saltlakebiblecollege.org/images/Wrong_Answer_2.jpg"   
 };*/
