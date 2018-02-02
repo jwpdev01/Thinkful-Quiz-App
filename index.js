@@ -131,6 +131,10 @@ function setDialogText(answer) {
 
 }
 
+function test() {
+    alert('test');
+}
+
 //initate and start the quiz
 function initiateQuiz() {
     initializeQuiz();

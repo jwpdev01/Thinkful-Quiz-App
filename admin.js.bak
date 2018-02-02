@@ -1,0 +1,32 @@
+function loadDataTable(){
+    let currentQuestion = 0;
+    //write the current question and answers to the UI.
+    console.log(QUIZ.length);
+    for (let x = 0; x < QUIZ.length; x++) {
+        currentQuestion = x;
+        renderQuestionList(x);
+    }
+
+    $('.admin-delete').on('click', function(event) {        
+        itemIndex = $(this).val();
+        QUIZ.splice(1, 1);
+        loadDataTable();
+    });  
+}
+
+function renderQuestionList(currentQuestion) {
+    $('.js-admin').append(`
+    <div class="admin-question" data-item-index="${currentQuestion}">
+        <h2>${currentQuestion+1}. ${QUIZ[currentQuestion].question}</h2>
+        <button class='admin-delete'>delete</button>
+    </div>                
+`);  
+}
+
+function renderAdminPage() {
+    loadDataTable();
+}
+
+
+$(renderAdminPage);
+
